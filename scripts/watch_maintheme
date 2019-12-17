@@ -2,8 +2,11 @@
 
 while true ; do
 	while ! inotifywait -e modify "retrocrt.xml" ; do
-		rsync --bwlimit 750k -av --progress --delete --exclude '*swp' --exclude .git ./ rpi:"/etc/emulationstation/themes/RetroCRT-240p-Beta/"
-		ssh rpi "killall emulationstation"
+		ssh rpib "cd raspi2png ; ./raspi2png --pngname shots/$(date +%Y%m%d_%H%M%S).png"
+        sleep 3
+		rsync -av --progress rpib:raspi2png/shots/ /var/www/html/fbatheme/
+		rsync --bwlimit 750k -av --progress --delete --exclude '*swp' --exclude .git ./ rpib:"/etc/emulationstation/themes/Beta/"
+		ssh rpib "killall emulationstation"
 		date
 	done
 done

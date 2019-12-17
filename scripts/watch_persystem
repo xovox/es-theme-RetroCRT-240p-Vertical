@@ -8,7 +8,11 @@ while true ; do
 		for i in */background.png ; do
 			echo "<img src=$i>"
 		done > preview.html
-		rsync -av --progress --delete --exclude '*swp' ./ rpi:/etc/emulationstation/themes/Beta/
+		ssh rpib "cd raspi2png ; ./raspi2png --pngname shots/$(date +%Y%m%d_%H%M%S).png"
+		sleep 3
+		rsync -av --progress rpib:raspi2png/shots/ /var/www/html/fbatheme/
+		rsync -av --progress --delete  --exclude .git --exclude '*swp' ./ rpib:/etc/emulationstation/themes/Beta/
+		ssh rpib killall emulationstation
 		date
 	done
 done

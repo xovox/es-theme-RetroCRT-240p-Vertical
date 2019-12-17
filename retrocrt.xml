@@ -16,14 +16,6 @@ theme name:		RetroCRT-240p
             <path>./art/systemback.png</path>
         </image>
 
-		<helpsystem name="help">
-			<pos>0.012 1.960</pos>
-			<textColor>ffc000</textColor>
-			<iconColor>ffc000</iconColor>
-			<fontPath>./art/04B_03__.TTF</fontPath>
-			<fontSize>0.033</fontSize>
-		</helpsystem>
-
 	</view>
 
 	<view name="
@@ -32,17 +24,7 @@ theme name:		RetroCRT-240p
 		grid
 		">
 		
-		<textlist name="gamelist">
-			<pos>0.055 0.05</pos>
-			<size>0.46 0.90</size>
-			<alignment>left</alignment>
-			<horizontalMargin>0.01</horizontalMargin>
-			<fontPath>./art/04B_03__.TTF</fontPath>
-			<fontSize>0.035</fontSize>
-            <forceUppercase>1</forceUppercase>
-		</textlist>
-		
-	    <helpsystem name="help">
+		<helpsystem name="help">
 			<pos>0.012 1.960</pos>
 			<textColor>ffc000</textColor>
 			<iconColor>ffc000</iconColor>
@@ -50,6 +32,16 @@ theme name:		RetroCRT-240p
 			<fontSize>0.035</fontSize>
 		</helpsystem>
 
+		<textlist name="gamelist">
+			<pos>0.055 0.165</pos>
+			<size>0.90 0.50</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<fontPath>./art/04B_03__.TTF</fontPath>
+			<fontSize>0.025</fontSize>
+            <forceUppercase>1</forceUppercase>
+		</textlist>
+		
 		<text name="
 			md_lbl_description,
 			md_description,
@@ -77,64 +69,68 @@ theme name:		RetroCRT-240p
 			<color>cccccc</color>
 			<forceUppercase>1</forceUppercase>
 			<fontPath>./art/04B_03__.TTF</fontPath>
-			<fontSize>0.035</fontSize>
+			<fontSize>0.025</fontSize>
 		</text>
 	
 		<datetime name="md_releasedate">
 			<format>(c)%Y</format>
-			<pos>0.525 0.750</pos>
-			<size>0.10 0.03</size>
+			<pos>0.500 0.700</pos>
+			<size>0.13 0.03</size>
 		</datetime>
 		
 		<text name="md_developer">
-			<pos>0.625 0.750</pos>
-			<size>0.400 0.03</size>
+			<pos>0.635 0.700</pos>
+			<size>0.475 0.03</size>
 		</text>
 
 		<text name="md_publisher">
-			<pos>0.625 0.775</pos>
+			<pos>0.635 0.725</pos>
 			<size>0.400 0.03</size>
 		</text>
 		
+<!--
 		<text name="md_lbl_genre">
-			<pos>0.525 0.825</pos>
+			<pos>0.500 0.800</pos>
 		</text>
+-->
 		
 		<text name="md_genre">
-			<pos>0.610 0.825</pos>
+			<pos>0.500 0.775</pos>
 			<size>0.400 0.03</size>
 		</text>
 		
 		<text name="md_lbl_players">
-			<pos>0.525 0.850</pos>
+			<pos>0.500 0.800</pos>
 		</text>
 
 		<text name="md_players">
-			<pos>0.640 0.850</pos>
+			<pos>0.660 0.800</pos>
 		</text>
 		
 		<text name="md_lbl_lastplayed">
-			<pos>0.525 0.875</pos>
+			<pos>0.500 0.825</pos>
+			<size>0.250 0.03</size>
 		</text>
 		
 		<datetime name="md_lastplayed">
-			<pos>0.695 0.875</pos>
+			<pos>0.725 0.825</pos>
 		</datetime>
 		
 		<text name="md_lbl_playcount">
-			<pos>0.525 0.900</pos>
+			<pos>0.500 0.850</pos>
+			<size>0.300 0.03</size>
 		</text>	
 
 		<text name="md_playcount">
-			<pos>0.710 0.900</pos>
+			<pos>0.750 0.850</pos>
 		</text>	
 
 		<text name="md_lbl_rating">
-			<pos>0.525 0.925</pos>
+			<pos>0.500 0.875</pos>
 		</text>	
 
 		<rating name="md_rating">
-			<pos>0.625 0.925</pos>
+			<pos>0.635 0.875</pos>
 			<size>0.192 0.030</size>
 		</rating>
 		
@@ -149,22 +145,35 @@ theme name:		RetroCRT-240p
 
 	<view name="detailed">
 		<image name="md_image">
+<!--
+			<color>FFFFFF00</color>
+			<pos>0.055 0.165</pos>
+			<pos>0.33 0.80</pos>
+			<maxSize>0.25 0.25</maxSize>
 			<origin>0.5 0.5</origin>
-			<pos>0.730 0.48</pos>
-			<maxSize>0.40 0.50</maxSize>
+-->
+			<pos>0.25 0.80</pos>
+			<maxSize>0.33 0.25</maxSize>
 		</image>
 	</view>
 
 	<view name="video">
 		<video name="md_video">
-			<origin>0.5 0.5</origin>
-			<pos>0.730 0.48</pos>
-			<maxSize>0.40 0.50</maxSize>
+			<pos>0.25 0.80</pos>
+			<maxSize>0.33 0.25</maxSize>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 		</video>
 	</view>
 
     <view name="basic">
+		<helpsystem name="help">
+			<pos>0.012 1.960</pos>
+			<textColor>ffc000</textColor>
+			<iconColor>ffc000</iconColor>
+			<fontPath>./art/04B_03__.TTF</fontPath>
+			<fontSize>0.035</fontSize>
+		</helpsystem>
+
 		<textlist name="gamelist">
             <pos>0.11 0.180</pos>
             <size>0.8 0.775</size>
@@ -172,7 +181,7 @@ theme name:		RetroCRT-240p
             <horizontalMargin>0.01</horizontalMargin>
             <forceUppercase>1</forceUppercase>
 			<fontPath>./art/04B_03__.TTF</fontPath>
-			<fontSize>0.070</fontSize>
+			<fontSize>0.050</fontSize>
         </textlist>
 	</view>
 
