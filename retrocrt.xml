@@ -1,0 +1,179 @@
+<!--
+theme name:		RetroCRT-240p
+-->
+
+<theme>
+    <formatVersion>3</formatVersion>
+
+	<view name="system">
+		
+     <image name="background" extra="true">
+            <tile>false</tile>
+            <pos>0.0 0.0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <color>0047ab</color>
+            <path>./art/systemback.png</path>
+        </image>
+
+		<helpsystem name="help">
+			<pos>0.012 1.960</pos>
+			<textColor>ffc000</textColor>
+			<iconColor>ffc000</iconColor>
+			<fontPath>./art/04B_03__.TTF</fontPath>
+			<fontSize>0.033</fontSize>
+		</helpsystem>
+
+	</view>
+
+	<view name="
+		detailed,
+		video,
+		grid
+		">
+		
+		<textlist name="gamelist">
+			<pos>0.055 0.05</pos>
+			<size>0.46 0.90</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<fontPath>./art/04B_03__.TTF</fontPath>
+			<fontSize>0.035</fontSize>
+            <forceUppercase>1</forceUppercase>
+		</textlist>
+		
+	    <helpsystem name="help">
+			<pos>0.012 1.960</pos>
+			<textColor>ffc000</textColor>
+			<iconColor>ffc000</iconColor>
+			<fontPath>./art/04B_03__.TTF</fontPath>
+			<fontSize>0.035</fontSize>
+		</helpsystem>
+
+		<text name="
+			md_lbl_description,
+			md_description,
+			md_lbl_developer,
+			md_developer,
+			md_lbl_genre,
+			md_genre,
+			md_lbl_lastplayed,
+			md_lastplayed,
+			md_lbl_playcount,
+			md_playcount,
+			md_lbl_players,
+			md_players,
+			md_lbl_players,
+			md_players,
+			md_lbl_publisher,
+			md_publisher,
+			md_lbl_rating,
+			md_rating,
+			md_lbl_releasedate,
+			md_releasedate
+			">
+			<pos>1 1</pos>
+			<size>0.192 0.030</size>
+			<color>cccccc</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/04B_03__.TTF</fontPath>
+			<fontSize>0.035</fontSize>
+		</text>
+	
+		<datetime name="md_releasedate">
+			<format>(c)%Y</format>
+			<pos>0.525 0.750</pos>
+			<size>0.10 0.03</size>
+		</datetime>
+		
+		<text name="md_developer">
+			<pos>0.625 0.750</pos>
+			<size>0.400 0.03</size>
+		</text>
+
+		<text name="md_publisher">
+			<pos>0.625 0.775</pos>
+			<size>0.400 0.03</size>
+		</text>
+		
+		<text name="md_lbl_genre">
+			<pos>0.525 0.825</pos>
+		</text>
+		
+		<text name="md_genre">
+			<pos>0.610 0.825</pos>
+			<size>0.400 0.03</size>
+		</text>
+		
+		<text name="md_lbl_players">
+			<pos>0.525 0.850</pos>
+		</text>
+
+		<text name="md_players">
+			<pos>0.640 0.850</pos>
+		</text>
+		
+		<text name="md_lbl_lastplayed">
+			<pos>0.525 0.875</pos>
+		</text>
+		
+		<datetime name="md_lastplayed">
+			<pos>0.695 0.875</pos>
+		</datetime>
+		
+		<text name="md_lbl_playcount">
+			<pos>0.525 0.900</pos>
+		</text>	
+
+		<text name="md_playcount">
+			<pos>0.710 0.900</pos>
+		</text>	
+
+		<text name="md_lbl_rating">
+			<pos>0.525 0.925</pos>
+		</text>	
+
+		<rating name="md_rating">
+			<pos>0.625 0.925</pos>
+			<size>0.192 0.030</size>
+		</rating>
+		
+<!-- maybe, maybe not?
+		<image name="md_marquee">
+			<origin>0.5 0.5</origin>
+			<pos>0.545 0.11</pos>
+			<maxSize>0.33 0.15</maxSize>
+		</image>
+-->
+	</view>
+
+	<view name="detailed">
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.730 0.48</pos>
+			<maxSize>0.40 0.50</maxSize>
+		</image>
+	</view>
+
+	<view name="video">
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.730 0.48</pos>
+			<maxSize>0.40 0.50</maxSize>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+		</video>
+	</view>
+
+    <view name="basic">
+		<textlist name="gamelist">
+            <pos>0.11 0.180</pos>
+            <size>0.8 0.775</size>
+            <alignment>left</alignment>
+            <horizontalMargin>0.01</horizontalMargin>
+            <forceUppercase>1</forceUppercase>
+			<fontPath>./art/04B_03__.TTF</fontPath>
+			<fontSize>0.070</fontSize>
+        </textlist>
+	</view>
+
+</theme>
